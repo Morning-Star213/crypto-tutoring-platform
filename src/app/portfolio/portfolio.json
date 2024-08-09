@@ -1,0 +1,115 @@
+[
+{
+  "img": "1inch-logo.svg",
+  "type": "Venture",
+  "url":"https://app.1inch.io/",
+  "sector": "Finance",
+  "secter2":"DEX aggregator that works out the best crypto prices across decentralized exchanges."
+},
+{
+  "img": "abra-logo.svg",
+  "type": "Venture",
+  "url":"https://www.abra.com/",
+  "sector": "Infrastructure",
+  "secter2":"Platform that allows users to buy, sell, hold, and earn interest on cryptocurrencies."
+},
+
+{
+  "img": "Alchemy-logo.svg",
+  "type": "Venture",
+  "url":"https://alchemyapi.io/",
+  "sector": "Infrastructure",
+  "secter2":"Platform that provides developers with the fundamental building blocks they need to create decentralized applications."
+},
+{
+  "img": "amber-logo.svg",
+  "type": "Venture",
+  "url":"https://www.ambergroup.io/",
+  "sector": "Finance",
+  "secter2":"Crypto finance service provider that provides liquidity provision, trading, and asset management services. "
+},
+{
+  "img": "Ampleforth-logo.webp",
+  "type": "Venture",
+  "url":"https://www.ampleforth.org/",
+  "sector": "Infrastructure",
+  "secter2":"Supply dynamic cryptocurrency built on ethereum."
+},
+{
+  "img": "Anchorage-Digital-Logo-Blue.webp",
+  "type": "Venture",
+  "url":"https://anchorage.com/",
+  "sector": "Infrastructure",
+  "secter2":"Crypto-native digital asset custodian that uses modern security engineering to help institutions safeguard their assets."
+},
+{
+  "img": "Ancient8-Logo-Blue.webp",
+  "type": "Venture",
+  "url":"https://ancient8.gg/",
+  "sector": "Infrastructure",
+  "secter2":"Vietnam’s largest blockchain gaming guild, focused on education and scholarship of new players."
+},
+{
+  "img": "Angelic-Logo-BlueMetaverse-Game-Studio.webp",
+  "type": "Venture",
+  "url":"https://www.angelicthegame.com/",
+  "sector": "Infrastructure",
+  "secter2":"A turn-based strategy combat and narrative RPG game built on Solana."
+},
+{
+  "img": "Logo-2.webp",
+  "type": "Venture",
+  "url":"https://www.antic.xyz/",
+  "sector": "Infrastructure",
+  "secter2":"Web3 platform powering the entertainment, gaming and e-commerce space for co-ownership potential. "
+},
+{
+  "img": "api3-500.webp",
+  "type": "Venture",
+  "url":"https://api3.org/",
+  "sector": "Infrastructure",
+  "secter2":"Blockchain-native, decentralized APIs with DAO-governance and quantifiable security."
+},
+{
+  "img": "arbitrum-logo-blue.webp",
+  "type": "Venture",
+  "url":"https://offchainlabs.com/",
+  "sector": "Infrastructure",
+  "secter2":"Scaling solution developed by Offchain Labs."
+},
+{
+  "img": "Audius_logo.webp",
+  "type": "Venture",
+  "url":"https://audius.co/",
+  "sector": "Infrastructure",
+  "secter2":"Decentralized music streaming and sharing platform."
+},
+{
+  "img": "aza-logo.webp",
+  "type": "Venture",
+  "url":"https://www.azafinance.com/",
+  "sector": "Infrastructure",
+  "secter2":"Provider of currency trading solutions that accelerate global access to frontier markets. "
+},
+{
+  "img": "bakkt-logo.svg",
+  "type": "Venture",
+  "url":"https://www.bakkt.com/",
+  "sector": "Infrastructure",
+  "secter2":"Financial services company offering bitcoin derivatives, custody, and a consumer wallet for digital assets. "
+},
+{
+  "img": "Balancer-logo.svg",
+  "type": "Venture",
+  "url":"https://balancer.exchange/#/swap",
+  "sector": "Infrastructure",
+  "secter2":"Non-custodial portfolio manager, liquidity provider, and price sensor."
+},
+{
+  "img": "BCB-logo.webp",
+  "type": "Venture",
+  "url":"https://bcbgroup.io/",
+  "sector": "Infrastructure",
+  "secter2":"Europe's leading provider of business accounts and trading services for the digital asset economy. "
+}
+]

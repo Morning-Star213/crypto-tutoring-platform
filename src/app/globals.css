@@ -1,0 +1,389 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'NeoGramCondensed';
+  src: url('/font/NeoGramCondensed.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.18rem;
+}
+@font-face {
+  font-family: 'NeoGramExtended';
+  src: url('/font/NeoGramExtended.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.18rem;
+}
+
+body {
+  @apply text-default-color; /* Apply the custom gray defined in tailwind.config.js */
+  @apply text-secondary-color;
+  color: #1b263b;
+}
+
+/* Dark Mode Styles */
+.dark body {
+  color: #e0e1dd;
+}
+
+.swiper-wrapper{
+  justify-content: space-around !important;
+  margin-right: 30px !important;
+}
+
+h1 {
+  font-size: 85px;
+  font-weight: 700;
+  letter-spacing: -0.27rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  line-height: 1;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -0.18rem;
+}
+h5 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+
+li:hover {
+  cursor: pointer;
+}
+
+.swiper-pagination {
+  transform: translateX(10%) !important;
+}
+
+.swiper-pagination-bullet {
+  width: 35px !important;
+  height: 8px !important;
+  border-radius: 0% !important;
+  background: #D9D9D9 !important;
+  margin: 0px 6px !important;
+  transition: width 0.2s, height 0.2s, opacity 0.2s;
+}
+
+.swiper-pagination-bullet:hover {
+  opacity: 0.9;
+}
+.swiper-pagination-bullet-active {
+  background: white;
+}
+
+@media (max-width: 1600px) {
+  .swiper-pagination {
+    transform: translateX(15%) !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .swiper-pagination {
+    transform: translateX(0%) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 37px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 37px;
+  }
+  .sub-title {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+  .swiper-pagination {
+    bottom: 5px !important;
+  }
+  .swiper-pagination-bullet {
+    height: 5px !important;
+  }
+}
+
+@layer base {
+  .scrollBody {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-x {
+    max-width: 1280px;
+  }
+  .grid2-x {
+    max-width: 1440px;
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: calc(1800px - 30px);
+    margin: 0 auto;
+  }
+  .sub-title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .news-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.4px;
+  }
+  .news-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.1px;
+  }
+  .small-content {
+    font-size: 12px;
+    font-weight: 600px;
+    color: white;
+    line-height: 18px;
+  }
+  .medium-content {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+  }
+
+  .sidebar-news {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  .menu-open {
+    height: 100vh;
+  }
+
+  @media (max-width: 1536px) {
+    .main-container {
+      max-width: calc(1536px - 30px);
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .main-container {
+      max-width: calc(1440px - 150px);
+    }
+
+    .sidebar-news {
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .medium-content {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+
+}
+
+@layer components {
+  .section-hero {
+    width: 100%;
+    margin-top: calc(105px + 88px)
+  }
+@media (max-width: 450px) {
+  .section-hero {
+    width: 100%;
+    margin-top: calc(105px + 188px);
+  }
+}
+
+  .toggle-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 360px;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .toggle-menu li:hover {
+    color: #cccccc;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  input:checked~.dot {
+    transform: translateX(30px);
+    /* background-color: #132b50; */
+  }
+}
+
+/* Scroll Button */
+.btn3{
+  color: black;
+  background-color: white;
+  border: black solid 1px;
+  transition-duration: 500ms;
+  transition: all;
+  animation-delay: 5000ms;
+}
+
+.outpadding{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.grid1{
+  max-width: 1280px;
+}
+
+.grid2{
+  display: block;
+  max-width: 197px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 50px;
+  width: 170px;
+  height: 50px;
+}
+.grid3{
+  max-width: 1300px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+ 
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width:1024px) {
+  .grid2{
+    margin-top: 40px;
+  }  
+}
+
+@media (max-width:800px) {
+  .outpadding{
+    padding-left: 40px;
+    padding-right: 40px;
+  }  
+}
+
+@media (max-width:700px) {
+  .outpadding{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .grid2{
+    max-width: 585px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: -35px;
+    /* width: 585px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  .grid3{
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-direction: column;
+  }  
+}
+
+@media (max-width:450px) {
+  .grid2{
+    height: 40px;
+    width: 100%;
+    margin-top: 0px;
+    font-size: 11.5px;
+  }
+  .grid3{
+    padding-top: 45px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .black-card1{
+    position: absolute;
+  }
+  .black-card2{
+      position: relative;
+
+  }
+}
+
+.black-card1{
+  /* margin-left: -20px;
+  margin-right: -20px; */
+  font-size: 15px;
+
+}
+.black-card2{
+  /* margin-left: -20px;
+  margin-right: -20px; */
+  font-size: 15px;
+
+}
+
+.flip-card-inner {
+  width: 100%;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #15182B;
+  color: white;
+  transform: rotateX(180deg);
+}

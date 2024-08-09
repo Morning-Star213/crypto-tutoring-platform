@@ -1,0 +1,18 @@
+.background-video {
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: cover;
+  background-color: rgba(238, 238, 238, 0.3);
+  background-image: url(/public/poster.webp);
+}
+
+@media screen and (min-width: 90em) {
+  .hide-for-xxlarge {
+      display: none !important;
+  }
+}
